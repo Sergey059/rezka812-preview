@@ -466,6 +466,12 @@ h3 {
   font-size: 19px;
 }
 
+h4 {
+  margin-top: 15px;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
 p {
   margin: 1em 0;
 }
@@ -495,7 +501,8 @@ button {
   font-family: inherit;
 }
 
-ul li {
+ul li,
+ol li {
   margin-bottom: 5px;
 }
 
@@ -593,8 +600,8 @@ img {
 .main {
   margin-bottom: 20px;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .main p {
@@ -716,6 +723,37 @@ img {
   max-width: 420px;
 }
 
+.text-link {
+  color: #2e8de0;
+}
+
+.text-link:hover {
+  color: #090;
+}
+
+.test {
+  font-size: 16px;
+}
+
+.test p {
+  text-align: left;
+  margin: 1em 0.5em;
+}
+
+.test ul,
+.test ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding-left: 1.625em;
+}
+
+.test ul li,
+.test ol li {
+  padding-left: 0.375em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .icon {
   width: 30px;
   height: 30px;
@@ -731,6 +769,10 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+a.logo:hover {
+  background-color: #ffefef;
 }
 
 .nav {
@@ -1226,6 +1268,8 @@ img {
 }
 
 .header__slogan-title {
+  margin: 0;
+  padding: 0;
   padding: 7px 0;
   line-height: 1.2;
   border-bottom: 1px solid #fff;
@@ -1235,6 +1279,8 @@ img {
 }
 
 .header__slogan-desc {
+  margin: 0;
+  padding: 0;
   padding: 7px 0;
   line-height: 1.33;
   font-family: SfontBold, Arial, sans-serif;
@@ -1536,8 +1582,10 @@ img {
 
   .aside {
     margin-right: 20px;
-    -ms-flex-preferred-size: 230px;
-    flex-basis: 230px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 230px;
+    flex: 1 0 230px;
+    max-width: 230px;
   }
 
   .aside__list {
