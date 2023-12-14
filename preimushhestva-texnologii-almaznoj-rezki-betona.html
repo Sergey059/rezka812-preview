@@ -185,6 +185,30 @@
         </div>
         <div class="footer__links"><a class="footer__link" href="/sitemap.html">карта сайта</a></div>
       </div>
+      <button class="feedback" aria-label="Обратный звонок">
+        <svg class="icon feedback__icon">
+          <use xlink:href="https://sergey059.github.io/rezka812-preview/images/svg-sprite.svg#icon-feedback"></use>
+        </svg><span class="feedback__circle"></span>
+      </button>
+      <div class="popup">
+        <form class="popup__form" method="post" enctype="multipart/form-data">
+          <button class="popup__close" aria-label="Закрыть всплывающее окно" type="button">
+            <svg class="icon">
+              <use xlink:href="https://sergey059.github.io/rezka812-preview/images/svg-sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <fieldset class="popup__fieldset">
+            <legend class="popup__legend">Заказать консультацию  <span>Отправьте заявку и мы свяжемся с вами в кратчайшие сроки</span></legend>
+            <div class="popup__item">
+              <input class="popup__area" id="popup-name" type="text" name="popup-name" placeholder="Ваше имя" required>
+            </div>
+            <div class="popup__item">
+              <input class="popup__area" id="popup-phone" type="tel" name="popup-email" placeholder="+7 (__) ___-__-__" required>
+            </div>
+          </fieldset>
+          <button class="popup__submit">Отправить заявку</button>
+        </form>
+      </div>
     </footer>
     <script src="https://sergey059.github.io/rezka812-preview/js/script.min.js"></script>
   </body>
